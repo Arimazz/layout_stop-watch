@@ -1,0 +1,58 @@
+.clock {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  border: 5px solid black;
+  border-radius: 50%; }
+  .clock__minutes {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    height: 230px;
+    width: 10px;
+    background-color: red;
+    border-radius: 5px;
+    -webkit-transform-origin: center bottom;
+            transform-origin: center bottom;
+    -webkit-animation: rotate 3600s linear infinite;
+            animation: rotate 3600s linear infinite; }
+  .clock__seconds {
+    position: absolute;
+    left: calc(50% + 3px);
+    bottom: 50%;
+    height: 240px;
+    width: 5px;
+    border-radius: 3px;
+    background-color: black;
+    -webkit-transform-origin: center bottom;
+            transform-origin: center bottom;
+    -webkit-animation: rotate 60s linear infinite;
+            animation: rotate 60s linear infinite; }
+  .clock__circle-decoration {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+    -webkit-transform: translate(calc(-50% + 5px), calc(50%));
+            transform: translate(calc(-50% + 5px), calc(50%)); }
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+/*# sourceMappingURL=main.css.map */
